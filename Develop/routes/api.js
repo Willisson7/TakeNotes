@@ -12,9 +12,7 @@ express.get('/notes', (req, res) => {
 });
 
 express.post('/notes', (req, res) => {
-    // Inform the client that their POST request was received
-    // res.json(`${req.method} request received to add a note`);
-
+  
     console.log(req.body);
     const { title, text } = req.body;
     if (req.body) {
